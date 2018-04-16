@@ -1,1 +1,1 @@
-#Lightweigth docker image for jekyll and yarn
+# Lightweigth docker image for jekyll and yarn
