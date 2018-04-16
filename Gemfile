@@ -15,5 +15,5 @@ gem "uglifier"
 gem 'rack-jekyll'
 gem 'bundler'
 gem 'rake'
-gem 'amp-jekyll'
+gem 'amp-jekyll', bitbucket: "rakunaco/amp-jekyll"
 gem 's3_website'
