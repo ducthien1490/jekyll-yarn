@@ -17,3 +17,7 @@ gem 'bundler'
 gem 'rake'
 gem 'amp-jekyll', bitbucket: "rakunaco/amp-jekyll"
 gem 's3_website'
+group :jekyll_plugins do
+  gem 'jekyll-google-tag-manager'
+end
+gem 'jekyll-analytics'
