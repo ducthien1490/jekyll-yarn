@@ -42,13 +42,12 @@ WORKDIR /usr/app
 COPY Gemfile /usr/app/
 COPY Gemfile.lock /usr/app/
 RUN bundle install
+RUN s3_website install
 
 COPY package.json /usr/app/
 COPY yarn.lock /usr/app/
 RUN yarn
 
 RUN rm -rf Gemfile Gemfile.lock package.json yarn.lock
-RUN curl -o /usr/lib/ruby/gems/2.4.0/gems/s3_website-3.4.0/s3_website-3.4.0.jar \
-  https://github.com/laurilehmijoki/s3_website/releases/download/v3.4.0/s3_website.jar
 
 CMD ["/bin/sh"]
